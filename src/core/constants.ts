@@ -3,7 +3,7 @@ import { Cluster } from '@solana/web3.js';
 export const SOLANA_CLUSTER: Cluster = 'mainnet-beta';
 export const SOLANA_RPC_ENDPOINT = 'https://api.mainnet-beta.solana.com';
 
-export const SERUM_DEX_PROGRAM_ID = 'DESVgJVGajEgKGXhb6XmqDHGz3VjdgP7rEVESBgxmroY';
+export const SERUM_DEX_PROGRAM_ID = '9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin';
 
 // Common token addresses
 export const WRAPPED_SOL_MINT = 'So11111111111111111111111111111111111111112';
@@ -55,3 +55,21 @@ export const CACHE_DURATIONS = {
   trades: 1000, // 1 second
   portfolio: 30 * 1000, // 30 seconds
 } as const;
+
+// Common market addresses
+export const MARKETS = {
+  'SOL/USDC': 'HWHvQhFmJB3NUcu1aihKmrKegfVxBEHzwVX6yZCKEsi1', // SOL/USDC market
+  'BTC/USDC': 'A8YFbxQYFVqKZaoYJLLUVcQiWP7G2MeEgW5wsAQgMvFw', // BTC/USDC market
+  'ETH/USDC': '4tSvZvnbyzHXLMTiFonMyxZoHmFqau1XArcRCVHLZ5gX', // ETH/USDC market
+} as const;
+
+// WebSocket configuration
+export const WS_PORT = 8080;
+export const WS_HEARTBEAT_INTERVAL = 30000; // 30 seconds
+
+// API configuration
+export const API_RATE_LIMIT = 100; // requests per minute
+export const ORDERBOOK_DEPTH = 20; // number of price levels to show
+
+// Cache configuration
+export const CACHE_TTL = 5000; // 5 seconds

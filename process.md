@@ -88,7 +88,7 @@ I should just go and code this on live youtube then, or what do you think?
 So I need to even manage the order book data, i created an orderbook before, let me manage the data that it contains itself on useOrderBook.ts. I think we'd just name stuffs as we think it instead of bothering then.
 
 ```bash
-1e16495e-5b5a-46d8-98a0-43596c52fa95
+af9b4454-81e3-41fc-8598-92ce8f84d31e
 request id
 ```
 
@@ -98,4 +98,15 @@ by the way, i wrote a small script to start the websocket server automatically i
 
 
 
+okay, i have created the constants file to include serum dex program ID and also the react hook to consume the websocket data in our frontend in useOrderbook.ts. and then created the component to display the orderbook in orderbook.tsx
 
+Let me just fix the casing issue i am currently facing. i renamed the orderbook component file for that now sha. And to fix the hook casing issue, i will update the useOrderbook.ts file too for that.
+
+okay, updated that. now let me update the trade page to use the correctly cased components i did now sha. so page.tsx updated now!
+
+since i have setup the realtime orderbook functionality, let me just start the websocket server and test it.
+
+oh, let me reinstall all the required dependencies for this to work:
+```bash
+pnpm add @solana/web3.js @project-serum/serum decimal.js
+```
