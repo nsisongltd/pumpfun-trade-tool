@@ -55,3 +55,47 @@ Optimized bundle size
 Dynamic imports for code splitting
 Service Worker for offline capabilities
 WebSocket connection pooling
+
+
+anyways, i have created all the directories i need:
+```bash
+mkdir -p src/{components,features/{tracking,trading,portfolio},core,lib,types} && touch src/types/index.ts src/lib/utils.ts src/core/constants.ts
+```
+
+then, i had to setup the core types in index.ts, and then the core constants in constants.ts. now, i have setup the utility functions in utils.ts
+
+all good now, no error yet. let me setup prisma schema for the db. ```pnpm prisma init``` 
+oh shit, let me just install glohbally o, this has got me an error. ```pnpm add -g prisma && pnpm prisma init```
+
+still waiting for it to load sef. it should do, let me write down the prisma schema i intend to work with on my notepad to brainstorm while it does the rubbish.
+
+okay, i have setup the prisma schema file in schema.prisma, let me now create the first react component for the trading interface. atleast the market selector would be easy to do since i just have to import a few things i like on marketselector.tsx, now i am trying to structure the order form component without errors too in orderform.tsx. seriously, finance is tough, i just have to make an orderbook too so it can match it against the form. okay, let me write the orderbook.tsx. give me some minutes.
+
+okay, i am back. time to create the working trading page to get the whole components together, i did this mistake before, let me try now again. fuck this mehn, too many errors.... pages.tsx mehn!
+
+okay, it is working finally....let me create the solana wallet provider wrapper for this project in providers.tsx. i have some in mind, so let me list it. be right back
+
+okay, let me update the root layout to use the providers i suggested. layout.tsx time to get sucked. dasssssshhh, another error ke! finally, e don dey work!
+
+let me create a small api route to get solana market data, na doings gan gan go start there. omooor route.ts abi routes.ts, what should i name it?
+
+okay, route.ts then. let me just make all directories to have src/app/api/markets, then i put route.ts there. okay done!
+
+let me create a hook to fetch and manage the market data i just got right now. omooor useMarkets.ts or make ah name am useMarketData.ts? okay, useMarkets.ts then.
+
+I should just go and code this on live youtube then, or what do you think?
+
+So I need to even manage the order book data, i created an orderbook before, let me manage the data that it contains itself on useOrderBook.ts. I think we'd just name stuffs as we think it instead of bothering then.
+
+```bash
+1e16495e-5b5a-46d8-98a0-43596c52fa95
+request id
+```
+
+okay, i think i should just create the order book api endpoint then. route.ts....fuck i am hungry. okay, one more before i eat. let me create a web socket server for real time market data handling first in websocket.ts.
+
+by the way, i wrote a small script to start the websocket server automatically in start-ws.ts (once again, my choice of naming, so i can remember things). okay, updated the package.json file with new dependencies i need, i should go to bed, maybe?let me install the new dependencies again ```pnpm install```.
+
+
+
+
