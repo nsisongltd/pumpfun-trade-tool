@@ -110,3 +110,14 @@ oh, let me reinstall all the required dependencies for this to work:
 ```bash
 pnpm add @solana/web3.js @project-serum/serum decimal.js
 ```
+
+now i need to install ts-node to run the websocket server script
+```pnpm add -D ts-node```
+
+okay, all good.
+
+Start the WebSocket server in one terminal:
+```pnpm ws```
+
+Start the Next.js development server in another terminal:
+```pnpm dev```
